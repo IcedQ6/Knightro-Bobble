@@ -14,7 +14,7 @@
   "image": "tile-ucf.png",
   "format": "RGBA8888",
   "size": { "w": 16, "h": 16 },
-  "scale": "32",
+  "scale": "1",
   "frameTags": [
   ],
   "layers": [
