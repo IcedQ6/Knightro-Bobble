@@ -44,7 +44,7 @@ public class player : MonoBehaviour
     //Allows the player to jump while also playing its SFX
     void Jumping()
     {
-        if (Keyboard.current.zKey.wasPressedThisFrame && isGrounded == false)
+        if ((Keyboard.current.zKey.wasPressedThisFrame || Keyboard.current.nKey.wasPressedThisFrame) && isGrounded == false)
         {
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
             PlayJumpClip();
@@ -53,7 +53,7 @@ public class player : MonoBehaviour
 
     void Shooting()
     {
-        if (Keyboard.current.xKey.wasPressedThisFrame)
+        if (Keyboard.current.xKey.wasPressedThisFrame || Keyboard.current.mKey.wasPressedThisFrame)
         {
 
 
