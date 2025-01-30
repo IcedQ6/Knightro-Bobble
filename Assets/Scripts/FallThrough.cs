@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class FallThrough : MonoBehaviour
 {
-    private Collider2D _collider;
-    private bool _playerOnPlatform;
+    private Collider2D playerCollider;
+    private bool isPlayerOnPlat;
 
     private void Start()
     {
-        _collider = GetComponent<Collider2D>();
+        playerCollider = GetComponent<Collider2D>();
     }
 
     private void Update()
     {
         //checks if player player is both on the stage AND inputting negative vertical values AKA Down
-        if(_playerOnPlatform && Input.GetAxisRaw("Vertical") < 0)
+        if (isPlayerOnPlat && Input.GetAxisRaw("Vertical") < 0)
         {
-            _collider.enabled = false;
+            playerCollider.enabled = false;
             StartCoroutine(EnableCollider());
         }
     }
@@ -25,28 +25,28 @@ public class FallThrough : MonoBehaviour
     private IEnumerator EnableCollider()
     {
         yield return new WaitForSeconds(1f);
-        _collider.enabled = true;
+        playerCollider.enabled = true;
 
     }
 
     //fetches player script to validate if the colliding force was the player
-    private void SetPlayerOnPlatform(Collision2D other, bool value)
+    private void AllowPlayerOnPlat(Collision2D other, bool value)
     {
         var player = other.gameObject.GetComponent<player>();
         if (player != null)
         {
-            _playerOnPlatform = value;
+            isPlayerOnPlat = value;
         }
     }
     //Determines if the player is colliding with stage
     private void OnCollisionEnter2D(Collision2D other)
     {
-        SetPlayerOnPlatform(other, true);
+            AllowPlayerOnPlat(other, true);
     }
 
     private void OnCollisionExit2D(Collision2D other)
     {
-        SetPlayerOnPlatform(other, true);
+        AllowPlayerOnPlat(other, true);
     }
 
 }
