@@ -12,8 +12,10 @@ public class player : MonoBehaviour
     public Vector2 jump;
     public float jumpForce = 5.0f;
     public AudioClip jumpClip;
+    private float soundValue;
+    public AudioSource soundSource;
     public bool isGrounded = false;
-    public SpriteRenderer spriteRenderer;
+   // public SpriteRenderer spriteRenderer;
     Rigidbody2D rb;
     private int input;
 
@@ -21,7 +23,7 @@ public class player : MonoBehaviour
     {
         speed = 6f;
         horizontalScreenLimit = 11.5f;
-        verticalScreenLimit = 7.5f;
+        verticalScreenLimit = 12f;
         rb = GetComponent<Rigidbody2D>();
     }
     void Update()
@@ -29,6 +31,9 @@ public class player : MonoBehaviour
         Movement();
         Jumping();
     }
+
+ 
+
     //Allows the player to move just left and right, while also allowing the player to return from the top if they fall or from side to side if desired.
     void Movement()
     {
@@ -54,14 +59,14 @@ public class player : MonoBehaviour
         }
         //Flips the sprite  
                input = (int)Input.GetAxisRaw("Horizontal");
-        if(input <0)
-        {
-            spriteRenderer.flipX = true;
-        }
-        else if (input > 0)
-        {
-            spriteRenderer.flipX = false;
-        }
+        //if(input < 0)
+      //  {
+       //     spriteRenderer.flipX = true;
+      //  }
+       // else if (input > 0)
+       // {
+          //  spriteRenderer.flipX = false;
+       // }//
     }
 
     void Shooting()
@@ -77,7 +82,8 @@ public class player : MonoBehaviour
     //SFX
     public void PlayJumpClip()
     {
-        AudioSource.PlayClipAtPoint(jumpClip, Camera.main.transform.position);
+        AudioSource.PlayClipAtPoint(jumpClip, Camera.main.transform.position, .3f);
+
     }
     //These two functions validate if the player is touching the stage.
     void OnCollisionEnter2D(Collision2D collision)
