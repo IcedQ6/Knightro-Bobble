@@ -6,14 +6,17 @@ public class player : MonoBehaviour
 {
     private float horizontalInput;
     private float verticalInput;
-    private float speed;
+    public float speed;
     private float horizontalScreenLimit;
     private float verticalScreenLimit;
     public Vector2 jump;
     public float jumpForce = 5.0f;
     public AudioClip jumpClip;
     public bool isGrounded = false;
+    public SpriteRenderer spriteRenderer;
     Rigidbody2D rb;
+    private int input;
+
     void Start()
     {
         speed = 6f;
@@ -48,7 +51,17 @@ public class player : MonoBehaviour
         {
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
             PlayJumpClip();
-        }  
+        }
+        //Flips the sprite  
+               input = (int)Input.GetAxisRaw("Horizontal");
+        if(input <0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if (input > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
     }
 
     void Shooting()
