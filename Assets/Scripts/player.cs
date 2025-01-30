@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class player : MonoBehaviour
 {
@@ -43,12 +44,23 @@ public class player : MonoBehaviour
     //Allows the player to jump while also playing its SFX
     void Jumping()
     {
-        if (Input.GetButtonDown("Jump") && isGrounded == false)
+        if (Keyboard.current.zKey.wasPressedThisFrame && isGrounded == false)
         {
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
             PlayJumpClip();
         }  
     }
+
+    void Shooting()
+    {
+        if (Keyboard.current.xKey.wasPressedThisFrame)
+        {
+
+
+        }
+
+    }
+
     //SFX
     public void PlayJumpClip()
     {
