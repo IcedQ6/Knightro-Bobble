@@ -10,6 +10,7 @@ public class EnemyAI : MonoBehaviour
     // Player detection
     public float detectionRadius = 8f;
     private Transform player;
+    private bool isCaptured = false;
 
     // Shooting
     public GameObject projectilePrefab;
@@ -37,6 +38,7 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         if (!player) return;
+        if (isCaptured) return;
 
         // Calculate distance to the player
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
@@ -100,7 +102,13 @@ public class EnemyAI : MonoBehaviour
         localScale.x *= -1;
         transform.localScale = localScale;
     }
-
+public void Capture()
+    {
+        isCaptured = true;
+        GetComponent<Collider2D>().enabled = false; // Disable movement
+        GetComponent<Rigidbody2D>().gravityScale = 0;
+        transform.position += Vector3.up * 0.1f; // Slight floating effect
+    }
     private void OnDrawGizmosSelected()
     {
         // Draw patrol range

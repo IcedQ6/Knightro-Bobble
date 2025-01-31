@@ -786,15 +786,15 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.2676951
+    x: 0
     y: 0
-    width: 0.4646098
+    width: 1
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 9.653846
+  orthographic size: 12.025641
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2360,7 +2360,7 @@ AudioSource:
   Priority: 221
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 14
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -2444,7 +2444,7 @@ Transform:
   m_GameObject: {fileID: 948986781}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.18846786, y: -1.6783687, z: -0.022436406}
+  m_LocalPosition: {x: -0.06, y: 1.6, z: -0.022436406}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4738,7 +4738,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 508269424}
-  - {fileID: 948986783}
   - {fileID: 519420032}
+  - {fileID: 948986783}
   - {fileID: 666662364}
   - {fileID: 1145857331}
