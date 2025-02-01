@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
     public GameObject enemyPrefab;
     public Transform[] spawnPoints;
     public float spawnInterval = 5f;
-
+    public int maxEnemies = 5; // Maximum allowed enemies in the scene
     private float spawnTimer = 0f;
     
 
@@ -20,23 +20,21 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         //Enemy Spawner
-      //   spawnTimer += Time.deltaTime;
-      //  if (spawnTimer >= spawnInterval)
-     //   {
-     //       SpawnEnemy();
-       //     spawnTimer = 0f;
-   // }
- //spawnTimer += Time.deltaTime;
-   //     if (spawnTimer >= spawnInterval)
-     //   {
-       //     SpawnEnemy();
-         //   spawnTimer = 0f;
-        //}
+         spawnTimer += Time.deltaTime;
+        if (spawnTimer >= spawnInterval && GetEnemyCount() < maxEnemies)
+        {
+            SpawnEnemy();
+            spawnTimer = 0f;
+        }
     }
 
-   // void SpawnEnemy()
-    //{
-      //  int randomIndex = Random.Range(0, spawnPoints.Length);
-      //  Instantiate(enemyPrefab, spawnPoints[randomIndex].position, Quaternion.identity);
-    //}
+    void SpawnEnemy()
+    {
+        int randomIndex = Random.Range(0, spawnPoints.Length);
+        Instantiate(enemyPrefab, spawnPoints[randomIndex].position, Quaternion.identity);
+    }
+    int GetEnemyCount()
+    {
+        return GameObject.FindGameObjectsWithTag("Enemy").Length; // Count enemies in the scene
+    }
 }

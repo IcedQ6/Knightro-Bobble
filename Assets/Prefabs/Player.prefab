@@ -134,7 +134,7 @@ BoxCollider2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
+  m_LayerOverridePriority: 1
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -172,14 +172,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2507574117833084048}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4621dcf414876ee45812e012b680b394, type: 3}
+  m_Script: {fileID: 11500000, guid: 17fe95945e77d1149bb0a3ab0955e668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 0
   jump: {x: 0, y: 0}
   jumpForce: 10
-  jumpClip: {fileID: 8300000, guid: 521f6a98b0d6ca34bb28b60bf433f641, type: 3}
-  soundSource: {fileID: 0}
   isGrounded: 0
-  deathClip: {fileID: 8300000, guid: 30a5b7cd617927f4e89e6cbdbd520b17, type: 3}
-  damageClip: {fileID: 8300000, guid: fd6ae2b8caaeda543b979fae7545ef39, type: 3}
+  jumpClip: {fileID: 8300000, guid: 521f6a98b0d6ca34bb28b60bf433f641, type: 3}
+  deathClip: {fileID: 8300000, guid: 60daade0107f6a343a14691fd6debc1a, type: 3}
+  damageClip: {fileID: 8300000, guid: 74dad2135be62c740a16e8b2849616fa, type: 3}

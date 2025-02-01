@@ -60,7 +60,7 @@ public class player : MonoBehaviour
             PlayJumpClip();
         }
         //Flips the sprite  
-               input = (int)Input.GetAxisRaw("Horizontal");
+               //input = (int)Input.GetAxisRaw("Horizontal");
         //if(input < 0)
       //  {
        //     spriteRenderer.flipX = true;

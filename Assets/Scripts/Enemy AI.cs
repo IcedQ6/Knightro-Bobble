@@ -27,12 +27,12 @@ public class EnemyAI : MonoBehaviour
         startPosition = transform.position;
 
         // Find the player
-       // player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
 
-       // if (!player)
-      //  {
-       // //    Debug.LogError("No player found in the scene! Make sure the player has the tag 'Player'.");
-       // }
+        if (!player)
+        {
+           Debug.LogError("No player found in the scene! Make sure the player has the tag 'Player'.");
+        }
     }
 
     void Update()
