@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9139200393930829692}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Stage
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172,12 +172,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2507574117833084048}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc8df1e3f866e284197e923329f6b418, type: 3}
+  m_Script: {fileID: 11500000, guid: 4621dcf414876ee45812e012b680b394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 5
   jump: {x: 0, y: 0}
-  jumpForce: 9.5
+  jumpForce: 10
   jumpClip: {fileID: 8300000, guid: 521f6a98b0d6ca34bb28b60bf433f641, type: 3}
   soundSource: {fileID: 0}
   isGrounded: 0
+  deathClip: {fileID: 8300000, guid: 30a5b7cd617927f4e89e6cbdbd520b17, type: 3}
+  damageClip: {fileID: 8300000, guid: fd6ae2b8caaeda543b979fae7545ef39, type: 3}

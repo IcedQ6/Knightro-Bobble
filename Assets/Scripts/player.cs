@@ -11,13 +11,14 @@ public class player : MonoBehaviour
     private float verticalScreenLimit;
     public Vector2 jump;
     public float jumpForce = 5.0f;
-    public AudioClip jumpClip;
-    private float soundValue;
-    public AudioSource soundSource;
     public bool isGrounded = false;
    // public SpriteRenderer spriteRenderer;
     Rigidbody2D rb;
     private int input;
+    private int lives;
+    public AudioClip jumpClip;
+    public AudioClip deathClip;
+    public AudioClip damageClip;
 
     void Start()
     {
@@ -25,6 +26,7 @@ public class player : MonoBehaviour
         horizontalScreenLimit = 11.5f;
         verticalScreenLimit = 12f;
         rb = GetComponent<Rigidbody2D>();
+        lives = 3;
     }
     void Update()
     {
@@ -79,12 +81,36 @@ public class player : MonoBehaviour
 
     }
 
+    //Manages player lives
+   public void PlayerLives()
+    {
+        lives--;
+        Debug.Log("lost a life");
+        PlayDamageClip();
+        if (lives == 0)
+        {
+            Destroy(this.gameObject);
+            PlayDeathClip();
+        }
+    }
+
     //SFX
     public void PlayJumpClip()
     {
         AudioSource.PlayClipAtPoint(jumpClip, Camera.main.transform.position, .3f);
 
     }
+
+    public void PlayDeathClip()
+    {
+        AudioSource.PlayClipAtPoint(deathClip, Camera.main.transform.position, .5f);
+    }
+
+    public void PlayDamageClip()
+    {
+        AudioSource.PlayClipAtPoint(damageClip, Camera.main.transform.position);
+    }
+
     //These two functions validate if the player is touching the stage.
     void OnCollisionEnter2D(Collision2D collision)
     {
