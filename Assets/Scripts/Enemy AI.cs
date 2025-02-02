@@ -130,4 +130,13 @@ public void Capture()
 
     }
 
+    private void OnCollisiobEnter2D(Collision2D collision)
+    {
+        if(collision.collider.tag == "Weapon")
+        {
+            Destroy(this.gameObject);
+            GameObject.Find("Item").GetComponent<RubberDuck>().SpawnItem();
+        }
+    }
+
 }

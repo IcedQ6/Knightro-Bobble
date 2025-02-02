@@ -8,11 +8,12 @@ public class GameManager : MonoBehaviour
     public float spawnInterval = 5f;
     public int maxEnemies = 5; // Maximum allowed enemies in the scene
     private float spawnTimer = 0f;
+    public int score;
     
 
     void Start()
     {
-        Instantiate(user, transform.position, Quaternion.identity);
+        Instantiate(user, new Vector2(0, -8), Quaternion.identity);
         
     }
 
@@ -28,10 +29,20 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void SpawnPlayer()
+    {
+
+    }
+
+    public void GetScore(int Amount)
+    {
+        score = score + Amount;
+    }
+
     void SpawnEnemy()
     {
         int randomIndex = Random.Range(0, spawnPoints.Length);
-        Instantiate(enemyPrefab, spawnPoints[randomIndex].position, Quaternion.identity);
+        //Instantiate(enemyPrefab, spawnPoints[randomIndex].position, Quaternion.identity);
     }
     int GetEnemyCount()
     {
