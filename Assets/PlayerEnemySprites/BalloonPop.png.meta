@@ -1,31 +1,46 @@
 fileFormatVersion: 2
-guid: e189a813c5f6201458c1e68377eff94f
+guid: afd536b1110b49a4b961dfb69a5cbba5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4356535555058711574
-    second: Knightro_Walk_0
+      213: 8027331244053725811
+    second: BalloonPop_0
   - first:
-      213: -1259968588327654680
-    second: Knightro_Walk_1
+      213: -1788332910083028045
+    second: BalloonPop_1
   - first:
-      213: -8519436226118214907
-    second: Knightro_Walk_2
+      213: -2044426959220634621
+    second: BalloonPop_2
   - first:
-      213: -4491175571777946158
-    second: Knightro_Walk_3
+      213: -5459083851276666191
+    second: BalloonPop_3
   - first:
-      213: 294075766106486914
-    second: Knightro_Walk_4
+      213: 7813460403763136762
+    second: BalloonPop_4
   - first:
-      213: 8727734274322092125
-    second: Knightro_Walk_5
+      213: 1852018236990183896
+    second: BalloonPop_5
   - first:
-      213: -7310672164665133532
-    second: Knightro_Walk_6
+      213: 2318399764197963350
+    second: BalloonPop_6
   - first:
-      213: -198288207762275241
-    second: Knightro_Walk_7
+      213: -3820060737625941954
+    second: BalloonPop_7
+  - first:
+      213: -1860287846974976943
+    second: BalloonPop_8
+  - first:
+      213: 1477513374737440883
+    second: BalloonPop_9
+  - first:
+      213: -2584917852311172605
+    second: BalloonPop_10
+  - first:
+      213: -2411621362847244034
+    second: BalloonPop_11
+  - first:
+      213: -9031809369683069432
+    second: BalloonPop_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -118,33 +133,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -173,13 +162,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Knightro_Walk_0
+      name: BalloonPop_0
       rect:
         serializedVersion: 2
         x: 31
-        y: 1023
+        y: 511
         width: 482
-        height: 898
+        height: 513
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61c32a26106857c30800000000000000
-      internalID: 4356535555058711574
+      spriteID: 37287306c3fc66f60800000000000000
+      internalID: 8027331244053725811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knightro_Walk_1
+      name: BalloonPop_1
       rect:
         serializedVersion: 2
-        x: 511
-        y: 1023
-        width: 514
-        height: 898
+        x: 831
+        y: 927
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8ea64989e31b38ee0800000000000000
-      internalID: -1259968588327654680
+      spriteID: 3bb4c5a71b09e27e0800000000000000
+      internalID: -1788332910083028045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knightro_Walk_2
+      name: BalloonPop_2
       rect:
         serializedVersion: 2
-        x: 1023
-        y: 1055
-        width: 514
-        height: 866
+        x: 991
+        y: 927
+        width: 33
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 50b11a7e3e1e4c980800000000000000
-      internalID: -8519436226118214907
+      spriteID: 30c0c6e238cb0a3e0800000000000000
+      internalID: -2044426959220634621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knightro_Walk_3
+      name: BalloonPop_3
       rect:
         serializedVersion: 2
-        x: 1567
-        y: 1023
-        width: 481
-        height: 898
+        x: 767
+        y: 863
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,20 +243,152 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2dd734cdc932ca1c0800000000000000
-      internalID: -4491175571777946158
+      spriteID: 1ba359529207d34b0800000000000000
+      internalID: -5459083851276666191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knightro_Walk_4
+      name: BalloonPop_4
       rect:
         serializedVersion: 2
-        x: 31
+        x: 639
+        y: 799
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af8c1e8f6dcfe6c60800000000000000
+      internalID: 7813460403763136762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BalloonPop_5
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 511
+        width: 98
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d9585d26c0b3b910800000000000000
+      internalID: 1852018236990183896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BalloonPop_6
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 511
+        width: 98
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6567e585d4c9c2020800000000000000
+      internalID: 2318399764197963350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BalloonPop_7
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 735
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e389369affa6cfac0800000000000000
+      internalID: -3820060737625941954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BalloonPop_8
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 671
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15c84153f0eee26e0800000000000000
+      internalID: -1860287846974976943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BalloonPop_9
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 511
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3702d1c069e218410800000000000000
+      internalID: 1477513374737440883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BalloonPop_10
+      rect:
+        serializedVersion: 2
+        x: 63
         y: 0
-        width: 482
-        height: 897
+        width: 98
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,20 +397,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 288f3d7e954c41400800000000000000
-      internalID: 294075766106486914
+      spriteID: 30a4d67a8e6802cd0800000000000000
+      internalID: -2584917852311172605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knightro_Walk_5
+      name: BalloonPop_11
       rect:
         serializedVersion: 2
-        x: 511
+        x: 255
         y: 0
-        width: 514
-        height: 897
+        width: 66
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -298,42 +419,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5058fab4142f1970800000000000000
-      internalID: 8727734274322092125
+      spriteID: ef02fb6d523388ed0800000000000000
+      internalID: -2411621362847244034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knightro_Walk_6
+      name: BalloonPop_12
       rect:
         serializedVersion: 2
-        x: 1023
-        y: 31
-        width: 514
-        height: 866
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4267ccb56664b8a90800000000000000
-      internalID: -7310672164665133532
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Knightro_Walk_7
-      rect:
-        serializedVersion: 2
-        x: 1567
+        x: 383
         y: 0
-        width: 481
-        height: 897
+        width: 98
+        height: 289
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,8 +441,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7544e25fce98f3df0800000000000000
-      internalID: -198288207762275241
+      spriteID: 806fef81b3198a280800000000000000
+      internalID: -9031809369683069432
       vertices: []
       indices: 
       edges: []
@@ -361,15 +460,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Knightro_Walk_0: 4356535555058711574
-      Knightro_Walk_1: -1259968588327654680
-      Knightro_Walk_2: -8519436226118214907
-      Knightro_Walk_3: -4491175571777946158
-      Knightro_Walk_4: 294075766106486914
-      Knightro_Walk_5: 8727734274322092125
-      Knightro_Walk_6: -7310672164665133532
-      Knightro_Walk_7: -198288207762275241
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -87,7 +87,7 @@ SpriteRenderer:
   m_Size: {x: 4.81, y: 4.82}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &6828564942053521658
@@ -99,16 +99,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 7772860596711170622}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f818ec96fcec0754bbd3a6871ec6f042, type: 3}
+  m_Script: {fileID: 11500000, guid: 338fdf021862e5849ba664700880eb73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 7772860596711170622}
+  item: {fileID: 0}
   itemClip: {fileID: 8300000, guid: bc4db2ca942a9cc468f88a29d8e54b6e, type: 3}
   itemLifeTime: 10
   sprites:
-  - {fileID: -4597637221845749860, guid: 73d2953314e9c1d46b3e839d2e6b27d2, type: 3}
-  - {fileID: 6244996791227890089, guid: 760fea6a42e9340488836417a2b5d964, type: 3}
-  - {fileID: 5714954272175664575, guid: 6ff61e17afa84b044bb90133dd9aa11f, type: 3}
+  - {fileID: -4597637221845749860, guid: e7fe659f4588e9d41b9b0e960b3684d6, type: 3}
+  - {fileID: 5714954272175664575, guid: 9dc44bb159953834d9a65437e5f2dc30, type: 3}
+  - {fileID: 6244996791227890089, guid: 166aa5d2a085d23459753d54b413d40b, type: 3}
 --- !u!50 &-5693178355166024459
 Rigidbody2D:
   serializedVersion: 5
