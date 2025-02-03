@@ -179,6 +179,6 @@ MonoBehaviour:
   jump: {x: 0, y: 0}
   jumpForce: 5
   isGrounded: 0
-  jumpClip: {fileID: 8300000, guid: 521f6a98b0d6ca34bb28b60bf433f641, type: 3}
-  deathClip: {fileID: 8300000, guid: 60daade0107f6a343a14691fd6debc1a, type: 3}
-  damageClip: {fileID: 8300000, guid: 74dad2135be62c740a16e8b2849616fa, type: 3}
+  jumpClip: {fileID: 0}
+  deathClip: {fileID: 0}
+  damageClip: {fileID: 0}
