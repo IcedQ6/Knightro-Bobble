@@ -172,13 +172,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2507574117833084048}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17fe95945e77d1149bb0a3ab0955e668, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b72c99f5e9d22546ac8a4bd0c330ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
   jump: {x: 0, y: 0}
-  jumpForce: 10
+  jumpForce: 5
   isGrounded: 0
-  jumpClip: {fileID: 8300000, guid: 521f6a98b0d6ca34bb28b60bf433f641, type: 3}
-  deathClip: {fileID: 8300000, guid: 60daade0107f6a343a14691fd6debc1a, type: 3}
-  damageClip: {fileID: 8300000, guid: 74dad2135be62c740a16e8b2849616fa, type: 3}
+  jumpClip: {fileID: 0}
+  deathClip: {fileID: 0}
+  damageClip: {fileID: 0}

@@ -1,31 +1,28 @@
 fileFormatVersion: 2
-guid: e189a813c5f6201458c1e68377eff94f
+guid: e596b4aa3b164454d84461588f7fb6aa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4356535555058711574
-    second: Knightro_Walk_0
+      213: 241255842149446987
+    second: optionsUnselected_0
   - first:
-      213: -1259968588327654680
-    second: Knightro_Walk_1
+      213: -7222868886224775952
+    second: optionsUnselected_1
   - first:
-      213: -8519436226118214907
-    second: Knightro_Walk_2
+      213: -7497190783399144936
+    second: optionsUnselected_2
   - first:
-      213: -4491175571777946158
-    second: Knightro_Walk_3
+      213: 3734315110215461156
+    second: optionsUnselected_3
   - first:
-      213: 294075766106486914
-    second: Knightro_Walk_4
+      213: -2084721190613570722
+    second: optionsUnselected_4
   - first:
-      213: 8727734274322092125
-    second: Knightro_Walk_5
+      213: 8997738097855327461
+    second: optionsUnselected_5
   - first:
-      213: -7310672164665133532
-    second: Knightro_Walk_6
-  - first:
-      213: -198288207762275241
-    second: Knightro_Walk_7
+      213: 7634542984990614489
+    second: optionsUnselected_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -67,14 +64,14 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
+  alignment: 4
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -118,33 +115,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -173,101 +144,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Knightro_Walk_0
+      name: optionsUnselected_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 1023
-        width: 482
-        height: 898
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 61c32a26106857c30800000000000000
-      internalID: 4356535555058711574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Knightro_Walk_1
-      rect:
-        serializedVersion: 2
-        x: 511
-        y: 1023
-        width: 514
-        height: 898
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8ea64989e31b38ee0800000000000000
-      internalID: -1259968588327654680
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Knightro_Walk_2
-      rect:
-        serializedVersion: 2
-        x: 1023
-        y: 1055
-        width: 514
-        height: 866
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 50b11a7e3e1e4c980800000000000000
-      internalID: -8519436226118214907
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Knightro_Walk_3
-      rect:
-        serializedVersion: 2
-        x: 1567
-        y: 1023
-        width: 481
-        height: 898
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2dd734cdc932ca1c0800000000000000
-      internalID: -4491175571777946158
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Knightro_Walk_4
-      rect:
-        serializedVersion: 2
-        x: 31
+        x: 0
         y: 0
-        width: 482
-        height: 897
+        width: 15
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 288f3d7e954c41400800000000000000
-      internalID: 294075766106486914
+      spriteID: b453e4309ec195300800000000000000
+      internalID: 241255842149446987
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knightro_Walk_5
+      name: optionsUnselected_1
       rect:
         serializedVersion: 2
-        x: 511
+        x: 15
         y: 0
-        width: 514
-        height: 897
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -298,42 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5058fab4142f1970800000000000000
-      internalID: 8727734274322092125
+      spriteID: 0f4d951340733cb90800000000000000
+      internalID: -7222868886224775952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knightro_Walk_6
+      name: optionsUnselected_2
       rect:
         serializedVersion: 2
-        x: 1023
-        y: 31
-        width: 514
-        height: 866
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4267ccb56664b8a90800000000000000
-      internalID: -7310672164665133532
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Knightro_Walk_7
-      rect:
-        serializedVersion: 2
-        x: 1567
+        x: 33
         y: 0
-        width: 481
-        height: 897
+        width: 14
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,8 +203,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7544e25fce98f3df0800000000000000
-      internalID: -198288207762275241
+      spriteID: 812592e44b0a4f790800000000000000
+      internalID: -7497190783399144936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: optionsUnselected_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42924c7bec3f2d330800000000000000
+      internalID: 3734315110215461156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: optionsUnselected_4
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5bafb95f159113e0800000000000000
+      internalID: -2084721190613570722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: optionsUnselected_5
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ec6aa0c0236edc70800000000000000
+      internalID: 8997738097855327461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: optionsUnselected_6
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d3e0d2356853f960800000000000000
+      internalID: 7634542984990614489
       vertices: []
       indices: 
       edges: []
@@ -352,7 +301,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -362,14 +311,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Knightro_Walk_0: 4356535555058711574
-      Knightro_Walk_1: -1259968588327654680
-      Knightro_Walk_2: -8519436226118214907
-      Knightro_Walk_3: -4491175571777946158
-      Knightro_Walk_4: 294075766106486914
-      Knightro_Walk_5: 8727734274322092125
-      Knightro_Walk_6: -7310672164665133532
-      Knightro_Walk_7: -198288207762275241
+      optionsUnselected_0: 241255842149446987
+      optionsUnselected_1: -7222868886224775952
+      optionsUnselected_2: -7497190783399144936
+      optionsUnselected_3: 3734315110215461156
+      optionsUnselected_4: -2084721190613570722
+      optionsUnselected_5: 8997738097855327461
+      optionsUnselected_6: 7634542984990614489
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
