@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 338fdf021862e5849ba664700880eb73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
+  item: {fileID: 7772860596711170622}
   itemClip: {fileID: 8300000, guid: bc4db2ca942a9cc468f88a29d8e54b6e, type: 3}
   itemLifeTime: 10
   sprites:
