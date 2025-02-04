@@ -7,6 +7,14 @@ public class EnemyAI : MonoBehaviour
     public float chaseSpeed = 4f;
     public float patrolRange = 5f;
 
+// Jumping variables
+    public float jumpForce = 5f;
+    public float jumpInterval = 3f; // Time between jumps
+    private float jumpTimer = 0f;
+    public Transform groundCheck;
+    public LayerMask groundLayer;
+    private bool isGrounded;
+
     // Player detection
     public float detectionRadius = 8f;
     private Transform player;
@@ -21,9 +29,11 @@ public class EnemyAI : MonoBehaviour
     // Internal tracking
     private Vector2 startPosition;
     private bool movingRight = true;
+      private Rigidbody2D rb;
 
     void Start()
-    {
+     {
+        rb = GetComponent<Rigidbody2D>();
         startPosition = transform.position;
 
         // Find the player
@@ -35,10 +45,14 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    [System.Obsolete]
     void Update()
     {
         if (!player) return;
         if (isCaptured) return;
+
+        // Check if enemy is on the ground
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
 
         // Calculate distance to the player
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
@@ -51,6 +65,14 @@ public class EnemyAI : MonoBehaviour
         else
         {
             Patrol();
+        }
+        
+        // Handles jumping
+        jumpTimer += Time.deltaTime;
+        if (jumpTimer >= jumpInterval && isGrounded)
+        {
+            Jump();
+            jumpTimer = 0f; // Reset jump timer
         }
     }
 
@@ -96,6 +118,14 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    [System.Obsolete]
+    void Jump()
+    {
+        if (isGrounded)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        }
+    }
     void Flip()
     {
         Vector3 localScale = transform.localScale;

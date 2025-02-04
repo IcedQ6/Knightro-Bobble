@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 269971438887054972}
   - component: {fileID: -7217169608912919402}
   - component: {fileID: 1628067741007467459}
-  - component: {fileID: 9139200393930829692}
+  - component: {fileID: 4238022533148197870}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -163,7 +163,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4, y: 9}
   m_EdgeRadius: 0
---- !u!114 &9139200393930829692
+--- !u!114 &4238022533148197870
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,13 +172,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2507574117833084048}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b72c99f5e9d22546ac8a4bd0c330ae6, type: 3}
+  m_Script: {fileID: 11500000, guid: 17fe95945e77d1149bb0a3ab0955e668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
   jump: {x: 0, y: 0}
   jumpForce: 5
-  isGrounded: 0
+  isGrounded: 1
   jumpClip: {fileID: 8300000, guid: 521f6a98b0d6ca34bb28b60bf433f641, type: 3}
   deathClip: {fileID: 8300000, guid: 60daade0107f6a343a14691fd6debc1a, type: 3}
   damageClip: {fileID: 8300000, guid: 74dad2135be62c740a16e8b2849616fa, type: 3}

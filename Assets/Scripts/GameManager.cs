@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
     void SpawnEnemy()
     {
         int randomIndex = Random.Range(0, spawnPoints.Length);
-        //Instantiate(enemyPrefab, spawnPoints[randomIndex].position, Quaternion.identity);
+        Instantiate(enemyPrefab, spawnPoints[randomIndex].position, Quaternion.identity);
     }
     int GetEnemyCount()
     {

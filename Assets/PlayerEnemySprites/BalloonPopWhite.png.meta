@@ -161,6 +161,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -485,7 +511,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BalloonPopWhite_0: 2477487659553192570
+      BalloonPopWhite_1: 1029816473608659637
+      BalloonPopWhite_10: 1246222356479792411
+      BalloonPopWhite_11: -1933441210440510059
+      BalloonPopWhite_12: -952438598307278975
+      BalloonPopWhite_13: -8021223391662032963
+      BalloonPopWhite_2: -6675787138965758931
+      BalloonPopWhite_3: 1050605788508460933
+      BalloonPopWhite_4: -4570122307132718882
+      BalloonPopWhite_5: -653624053359671805
+      BalloonPopWhite_6: 8119820898416581163
+      BalloonPopWhite_7: 575426553818531958
+      BalloonPopWhite_8: -485677241453216987
+      BalloonPopWhite_9: -2232527714542524793
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
