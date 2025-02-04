@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 37195080066443372}
-  - component: {fileID: 4569692216587042644}
+  - component: {fileID: 3915369377392925404}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 8462079178325468877}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4569692216587042644
+--- !u!114 &3915369377392925404
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,16 +42,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 3709929220377179353}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7826a91cf3d8624c8a068f35a6efdfa, type: 3}
+  m_Script: {fileID: 11500000, guid: 8d85c51896033914c8bd558bf0433b54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   user: {fileID: 2507574117833084048, guid: ecdc3e1351894974bba7f5c0e3527eb6, type: 3}
   enemyPrefab: {fileID: 1247432880169413723, guid: e185e0d23c4ca184c8cf379d513ef95b, type: 3}
-  spawnPoints:
-  - {fileID: 8462079178325468877}
-  spawnInterval: 1
-  maxEnemies: 3
+  spawnPoints: []
+  spawnInterval: 5
+  maxEnemies: 5
   score: 0
+  enemiesToDefeat: 3
 --- !u!1 &3770859732484941423
 GameObject:
   m_ObjectHideFlags: 0
