@@ -29,7 +29,11 @@ public class EnemyAI : MonoBehaviour
     // Internal tracking
     private Vector2 startPosition;
     private bool movingRight = true;
-      private Rigidbody2D rb;
+     private Rigidbody2D rb;
+
+    // Captured
+    public GameObject ducky;
+    public float floatSpeed = 2f;
 
     void Start()
      {
@@ -49,30 +53,37 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         if (!player) return;
-        if (isCaptured) return;
 
-        // Check if enemy is on the ground
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        if (!isCaptured)
+        {
+            // Check if enemy is on the ground
+            isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
 
-        // Calculate distance to the player
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+            // Calculate distance to the player
+            float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        // Decide behavior: Patrol or Chase
-        if (distanceToPlayer <= detectionRadius)
+            // Decide behavior: Patrol or Chase
+            if (distanceToPlayer <= detectionRadius)
+            {
+                ChasePlayer();
+            }
+            else
+            {
+                Patrol();
+            }
+
+            // Handles jumping
+            jumpTimer += Time.deltaTime;
+            if (jumpTimer >= jumpInterval && isGrounded)
+            {
+                Jump();
+                jumpTimer = 0f; // Reset jump timer
+            }
+        } else
         {
-            ChasePlayer();
-        }
-        else
-        {
-            Patrol();
-        }
-        
-        // Handles jumping
-        jumpTimer += Time.deltaTime;
-        if (jumpTimer >= jumpInterval && isGrounded)
-        {
-            Jump();
-            jumpTimer = 0f; // Reset jump timer
+            // What happens when enemy is in capture state
+            transform.position += Vector3.up * floatSpeed * Time.deltaTime;
+            transform.Translate(Vector2.up * floatSpeed * Time.deltaTime);
         }
     }
 
@@ -132,12 +143,20 @@ public class EnemyAI : MonoBehaviour
         localScale.x *= -1;
         transform.localScale = localScale;
     }
-public void Capture()
+    public void Capture()
     {
         isCaptured = true;
-        GetComponent<Collider2D>().enabled = false; // Disable movement
-        GetComponent<Rigidbody2D>().gravityScale = 0;
-        transform.position += Vector3.up * 0.1f; // Slight floating effect
+        isGrounded = false;
+        //GetComponent<Collider2D>().enabled = false; // Disable movement
+        GetComponent<Rigidbody2D>().gravityScale = 0.2f;
+        
+    }
+
+    public void Defeat()
+    {
+        GameObject.Find("Game Manager").GetComponent<GameManager>().EnemyDefeated();
+        Instantiate(ducky, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
     private void OnDrawGizmosSelected()
     {
@@ -154,20 +173,27 @@ public void Capture()
     {
         if(playerHit.gameObject.tag == "Player")
         {
-            GameObject.Find("Player(Clone)").GetComponent<player>().PlayerLives();
+            if (!isCaptured)
+            {
+                GameObject.Find("Player(Clone)").GetComponent<player>().PlayerLives();
+            }
+            else
+            {
+                Defeat();
+            }
 
         }
 
     }
 
-    private void OnCollisiobEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.collider.tag == "Weapon")
+        if (collision.gameObject.tag == "Weapon")
         {
-            Destroy(this.gameObject);
-            GameObject.Find("Item").GetComponent<RubberDuck>().SpawnItem();
-            
-            GameManager.instance.EnemyDefeated();
+            Capture();
+            Debug.Log("A projectile has hit the enemy");
+
+            //GameManager.instance.EnemyDefeated();
         }
     }
 

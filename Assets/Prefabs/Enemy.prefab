@@ -116,6 +116,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 0}
   firePoint: {fileID: 0}
   fireRate: 2
+  ducky: {fileID: 7772860596711170622, guid: a2f2d3194000d5346bad2083812bbb84, type: 3}
 --- !u!61 &6094648382452140855
 BoxCollider2D:
   m_ObjectHideFlags: 0
