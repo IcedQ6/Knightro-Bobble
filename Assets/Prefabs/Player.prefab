@@ -173,9 +173,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2507574117833084048}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17fe95945e77d1149bb0a3ab0955e668, type: 3}
+  m_Script: {fileID: 11500000, guid: 61c183887ae207e4ab0ed33fff20ad04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+
   weapon: {fileID: 2320548498569097402, guid: b81b67c9602f91f4dbd3dd2c91651304, type: 3}
   speed: 0
   jump: {x: 0, y: 0}
@@ -206,3 +207,4 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+
