@@ -166,6 +166,8 @@ public void Capture()
         {
             Destroy(this.gameObject);
             GameObject.Find("Item").GetComponent<RubberDuck>().SpawnItem();
+            
+            GameManager.instance.EnemyDefeated();
         }
     }
 

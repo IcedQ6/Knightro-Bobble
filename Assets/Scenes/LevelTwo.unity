@@ -214,9 +214,10 @@ MonoBehaviour:
   enemyPrefab: {fileID: 1247432880169413723, guid: e185e0d23c4ca184c8cf379d513ef95b, type: 3}
   spawnPoints:
   - {fileID: 1089435491}
-  spawnInterval: 5
+  spawnInterval: 3
   maxEnemies: 4
   score: 0
+  enemiesToDefeat: 4
 --- !u!1001 &1134331511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -346,10 +347,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.22749822
+    x: 0.40963855
     y: 0
-    width: 0.54429483
-    height: 1
+    width: 0.1814316
+    height: 0.3283582
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
