@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 
@@ -9,10 +10,19 @@ public class weaponScript : MonoBehaviour
 
     // Since the object can only lose ballons, we only need to switch it to that sprite once it has lost them.
     public Sprite noBallons;
+    [SerializeField] private SpriteRenderer spriteRenderer;
 
-    public double weaponSpeed = 50.0;
-    private double timeToLive = 8.0;
+    public float weaponSpeed = 50f;
+    private float timeToLive = 8f;
 
+    private void Start()
+    {
+        StartCoroutine(delayedDespawn());
+        if(GameObject.Find("Player(Clone)").GetComponent<player>().isFacingRight == false)
+        {
+            weaponSpeed = -weaponSpeed;
+        }
+    }
 
     // Update is called once per frame
     void Update()
@@ -20,9 +30,26 @@ public class weaponScript : MonoBehaviour
         moveWeapon();
     }
 
+    IEnumerator delayedDespawn()
+    {
+        yield return new WaitForSeconds(timeToLive);
+        Destroy(gameObject);
+    }
+
     void moveWeapon()
     {
-        Vector3 newPos = transform.position.x + weaponSpeed * Time.deltaTime;
-        transform.position = 
+        Vector3 newPos = Vector3.zero;
+        newPos.x = weaponSpeed * Time.deltaTime;
+        transform.position = transform.position + newPos;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag != "Player" && hasHit == false)
+        {
+            hasHit = true;
+            spriteRenderer.color = Color.red;
+            Debug.Log("Projectile has collided with something");
+        }
     }
 }

@@ -171,53 +171,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Manager
       objectReference: {fileID: 0}
-    - target: {fileID: 8462079178325468877, guid: 38940ccfd74f7ac4690edcf25bb72960, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8462079178325468877, guid: 38940ccfd74f7ac4690edcf25bb72960, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.09
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4569692216587042644, guid: 38940ccfd74f7ac4690edcf25bb72960, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3709929220377179353, guid: 38940ccfd74f7ac4690edcf25bb72960, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1089435492}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38940ccfd74f7ac4690edcf25bb72960, type: 3}
---- !u!1 &1089435490 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3709929220377179353, guid: 38940ccfd74f7ac4690edcf25bb72960, type: 3}
-  m_PrefabInstance: {fileID: 1089435489}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1089435491 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8462079178325468877, guid: 38940ccfd74f7ac4690edcf25bb72960, type: 3}
-  m_PrefabInstance: {fileID: 1089435489}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1089435492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1089435490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51dae185d139d56489388ea786c827ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  user: {fileID: 2507574117833084048, guid: ecdc3e1351894974bba7f5c0e3527eb6, type: 3}
-  enemyPrefab: {fileID: 1247432880169413723, guid: e185e0d23c4ca184c8cf379d513ef95b, type: 3}
-  spawnPoints:
-  - {fileID: 1089435491}
-  spawnInterval: 3
-  maxEnemies: 4
-  score: 0
-  enemiesToDefeat: 4
 --- !u!1001 &1134331511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -347,10 +305,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.40963855
+    x: 0.21531633
     y: 0
-    width: 0.1814316
-    height: 0.3283582
+    width: 0.5682575
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60

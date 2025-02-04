@@ -4,6 +4,9 @@ using UnityEngine.InputSystem;
 
 public class player : MonoBehaviour
 {
+    // Weapon object
+    public GameObject weapon;
+
     private float horizontalInput;
     private float verticalInput;
     public float speed;
@@ -12,6 +15,7 @@ public class player : MonoBehaviour
     public Vector2 jump;
     public float jumpForce = 5.0f;
     public bool isGrounded = false;
+    public bool isFacingRight = false;
    // public SpriteRenderer spriteRenderer;
     Rigidbody2D rb;
     private int input;
@@ -32,6 +36,7 @@ public class player : MonoBehaviour
     {
         Movement();
         Jumping();
+        Shooting();
     }
 
  
@@ -41,6 +46,13 @@ public class player : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
+        if (horizontalInput > 0)
+        {
+            isFacingRight = true;
+        } else if (horizontalInput < 0) {
+            isFacingRight = false;
+        }
+
         transform.Translate(new Vector3(horizontalInput, 0, 0) * Time.deltaTime * speed);
         if (transform.position.x > horizontalScreenLimit || transform.position.x <= -horizontalScreenLimit)
         {
@@ -75,8 +87,7 @@ public class player : MonoBehaviour
     {
         if (Keyboard.current.xKey.wasPressedThisFrame || Keyboard.current.mKey.wasPressedThisFrame)
         {
-
-
+            Instantiate(weapon, transform.position, Quaternion.identity);
         }
 
     }
