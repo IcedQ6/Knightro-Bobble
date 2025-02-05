@@ -21,6 +21,9 @@ public class weaponScript : MonoBehaviour
         if(GameObject.Find("Player(Clone)").GetComponent<player>().isFacingRight == false)
         {
             weaponSpeed = -weaponSpeed;
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1;
+            transform.localScale = localScale;
         }
     }
 
@@ -48,7 +51,7 @@ public class weaponScript : MonoBehaviour
         if (collision.gameObject.tag != "Player" && hasHit == false)
         {
             hasHit = true;
-            spriteRenderer.color = Color.red;
+            spriteRenderer.sprite = noBallons;
             Debug.Log("Projectile has collided with something");
         }
     }

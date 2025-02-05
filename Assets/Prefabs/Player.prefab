@@ -80,12 +80,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 4356535555058711574, guid: e189a813c5f6201458c1e68377eff94f, type: 3}
+  m_Sprite: {fileID: -3659071368280021268, guid: aeea6ad335630c24eb1100d4912cc3d9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 4.857143, y: 8.571428}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -152,17 +152,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.46824384, y: -0.0000019073486}
+  m_Offset: {x: 0.15962219, y: -0.44675422}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.82, y: 8.98}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 4.571429, y: 8}
+    newSize: {x: 4.857143, y: 8.571428}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4, y: 9}
+  m_Size: {x: 3.7343597, y: 7.1647096}
   m_EdgeRadius: 0
 --- !u!114 &4238022533148197870
 MonoBehaviour:
@@ -173,18 +173,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2507574117833084048}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61c183887ae207e4ab0ed33fff20ad04, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b72c99f5e9d22546ac8a4bd0c330ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-
   weapon: {fileID: 2320548498569097402, guid: b81b67c9602f91f4dbd3dd2c91651304, type: 3}
   speed: 0
   jump: {x: 0, y: 0}
   jumpForce: 5
   isGrounded: 0
-  jumpClip: {fileID: 0}
-  deathClip: {fileID: 0}
-  damageClip: {fileID: 0}
+  isFacingRight: 0
+  jumpClip: {fileID: 8300000, guid: 521f6a98b0d6ca34bb28b60bf433f641, type: 3}
+  deathClip: {fileID: 8300000, guid: 60daade0107f6a343a14691fd6debc1a, type: 3}
+  damageClip: {fileID: 8300000, guid: 74dad2135be62c740a16e8b2849616fa, type: 3}
 --- !u!95 &369520312777919526
 Animator:
   serializedVersion: 7
@@ -207,4 +207,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
-

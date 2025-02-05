@@ -1,46 +1,25 @@
 fileFormatVersion: 2
-guid: afd536b1110b49a4b961dfb69a5cbba5
+guid: cabc488eebaa3fb4a9afde24ff57bf60
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8027331244053725811
-    second: BalloonPop_0
+      213: -6253785972018468489
+    second: SpearAnimated_0
   - first:
-      213: -1788332910083028045
-    second: BalloonPop_1
+      213: -2775916619717316317
+    second: SpearAnimated_1
   - first:
-      213: -2044426959220634621
-    second: BalloonPop_2
+      213: -4889393187670028972
+    second: SpearAnimated_2
   - first:
-      213: -5459083851276666191
-    second: BalloonPop_3
+      213: -3536181383004398317
+    second: SpearAnimated_3
   - first:
-      213: 7813460403763136762
-    second: BalloonPop_4
+      213: 5605437837108552363
+    second: SpearAnimated_4
   - first:
-      213: 1852018236990183896
-    second: BalloonPop_5
-  - first:
-      213: 2318399764197963350
-    second: BalloonPop_6
-  - first:
-      213: -3820060737625941954
-    second: BalloonPop_7
-  - first:
-      213: -1860287846974976943
-    second: BalloonPop_8
-  - first:
-      213: 1477513374737440883
-    second: BalloonPop_9
-  - first:
-      213: -2584917852311172605
-    second: BalloonPop_10
-  - first:
-      213: -2411621362847244034
-    second: BalloonPop_11
-  - first:
-      213: -9031809369683069432
-    second: BalloonPop_12
+      213: -6697171933565787624
+    second: SpearAnimated_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -87,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 175
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -158,153 +137,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BalloonPop_0
+      name: SpearAnimated_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 511
-        width: 513
-        height: 513
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 37287306c3fc66f60800000000000000
-      internalID: 8027331244053725811
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BalloonPop_1
-      rect:
-        serializedVersion: 2
-        x: 831
-        y: 927
-        width: 34
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3bb4c5a71b09e27e0800000000000000
-      internalID: -1788332910083028045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BalloonPop_2
-      rect:
-        serializedVersion: 2
-        x: 991
-        y: 927
-        width: 33
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 30c0c6e238cb0a3e0800000000000000
-      internalID: -2044426959220634621
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BalloonPop_3
-      rect:
-        serializedVersion: 2
-        x: 767
-        y: 863
-        width: 34
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1ba359529207d34b0800000000000000
-      internalID: -5459083851276666191
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BalloonPop_4
-      rect:
-        serializedVersion: 2
-        x: 639
-        y: 799
-        width: 66
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af8c1e8f6dcfe6c60800000000000000
-      internalID: 7813460403763136762
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BalloonPop_5
-      rect:
-        serializedVersion: 2
-        x: 515
-        y: 510
-        width: 509
-        height: 514
+        x: 16
+        y: 1262
+        width: 500
+        height: 334
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d9585d26c0b3b910800000000000000
-      internalID: 1852018236990183896
+      spriteID: 779a48cdac61639a0800000000000000
+      internalID: -6253785972018468489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BalloonPop_6
+      name: SpearAnimated_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 505
-        height: 504
+        x: 548
+        y: 1262
+        width: 500
+        height: 334
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -335,52 +178,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6567e585d4c9c2020800000000000000
-      internalID: 2318399764197963350
+      spriteID: 32175a3ba86f979d0800000000000000
+      internalID: -2775916619717316317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BalloonPop_7
+      name: SpearAnimated_2
       rect:
         serializedVersion: 2
-        x: 831
-        y: 735
-        width: 34
-        height: 34
+        x: 16
+        y: 730
+        width: 500
+        height: 335
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e389369affa6cfac0800000000000000
-      internalID: -3820060737625941954
+      spriteID: 45d86b90dc2652cb0800000000000000
+      internalID: -4889393187670028972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BalloonPop_8
+      name: SpearAnimated_3
       rect:
         serializedVersion: 2
-        x: 543
-        y: 671
-        width: 34
-        height: 34
+        x: 548
+        y: 730
+        width: 500
+        height: 335
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 15c84153f0eee26e0800000000000000
-      internalID: -1860287846974976943
+      spriteID: 31d5ca484c5fceec0800000000000000
+      internalID: -3536181383004398317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpearAnimated_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 198
+        width: 500
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba2a36393048acd40800000000000000
+      internalID: 5605437837108552363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpearAnimated_5
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 198
+        width: 500
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812681c0c9dde03a0800000000000000
+      internalID: -6697171933565787624
       vertices: []
       indices: 
       edges: []
@@ -389,7 +276,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8b690be9091a6304ab876fe6936d6ba2
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -399,19 +286,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BalloonPop_0: 8027331244053725811
-      BalloonPop_1: -1788332910083028045
-      BalloonPop_10: -2584917852311172605
-      BalloonPop_11: -2411621362847244034
-      BalloonPop_12: -9031809369683069432
-      BalloonPop_2: -2044426959220634621
-      BalloonPop_3: -5459083851276666191
-      BalloonPop_4: 7813460403763136762
-      BalloonPop_5: 1852018236990183896
-      BalloonPop_6: 2318399764197963350
-      BalloonPop_7: -3820060737625941954
-      BalloonPop_8: -1860287846974976943
-      BalloonPop_9: 1477513374737440883
+      SpearAnimated_0: -6253785972018468489
+      SpearAnimated_1: -2775916619717316317
+      SpearAnimated_2: -4889393187670028972
+      SpearAnimated_3: -3536181383004398317
+      SpearAnimated_4: 5605437837108552363
+      SpearAnimated_5: -6697171933565787624
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

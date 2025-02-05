@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 166aa5d2a085d23459753d54b413d40b
+guid: 61120b0f7f8358748bed01a4627c85d4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6244996791227890089
-    second: GreenDuck_0
+      213: -9101193930310861679
+    second: BalloonSmall_0
   - first:
-      213: -456845251775901861
-    second: GreenDuck_1
+      213: 3575176468117809930
+    second: BalloonSmall_1
   - first:
-      213: 5020676478022916745
-    second: GreenDuck_2
-  - first:
-      213: -1316285711189429778
-    second: GreenDuck_3
+      213: -3681501605918395160
+    second: BalloonSmall_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 3.5
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -131,119 +128,71 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GreenDuck_0
+      name: BalloonSmall_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 511
-        width: 481
-        height: 482
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a9b7948e7faaa650800000000000000
-      internalID: 6244996791227890089
+      spriteID: 19c31ef275012b180800000000000000
+      internalID: -9101193930310861679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreenDuck_1
-      rect:
-        serializedVersion: 2
-        x: 511
-        y: 511
-        width: 482
-        height: 482
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b5fc29af9a5f8a9f0800000000000000
-      internalID: -456845251775901861
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GreenDuck_2
+      name: BalloonSmall_1
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 481
-        height: 481
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 98a17b4f7a60da540800000000000000
-      internalID: 5020676478022916745
+      spriteID: a0b6f7f3e049d9130800000000000000
+      internalID: 3575176468117809930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreenDuck_3
+      name: BalloonSmall_2
       rect:
         serializedVersion: 2
-        x: 511
-        y: 0
-        width: 482
-        height: 481
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee1b1a1ae1d9bbde0800000000000000
-      internalID: -1316285711189429778
+      spriteID: 8e4343b7bcda8ecc0800000000000000
+      internalID: -3681501605918395160
       vertices: []
       indices: 
       edges: []
@@ -252,7 +201,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7defa74ed1efeaa499e096d6556c0e92
     internalID: 0
     vertices: []
     indices: 
@@ -262,10 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GreenDuck_0: 6244996791227890089
-      GreenDuck_1: -456845251775901861
-      GreenDuck_2: 5020676478022916745
-      GreenDuck_3: -1316285711189429778
+      BalloonSmall_0: -9101193930310861679
+      BalloonSmall_1: 3575176468117809930
+      BalloonSmall_2: -3681501605918395160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
