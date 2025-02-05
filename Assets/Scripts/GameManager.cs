@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public GameObject enemyPrefab;
     public Transform[] spawnPoints;
     public float spawnInterval = 5f;
-    public int maxEnemies = 5; // Maximum allowed enemies in the scene
+    public int maxEnemies = 3; // Maximum allowed enemies in the scene
     private float spawnTimer = 0f;
     public int score;
      public int enemiesToDefeat = 3; // Required enemies to defeat to progress
@@ -67,8 +67,8 @@ public class GameManager : MonoBehaviour
         if (enemiesDefeated >= enemiesToDefeat)
         {
             levelComplete = true;
-            Debug.Log("All enemies defeated! Transitioning in 10 seconds...");
-            Invoke("HandleLevelCompletion", 10f); // Wait 10 seconds before deciding next step
+            Debug.Log("All enemies defeated! Transitioning in 5 seconds...");
+            Invoke("HandleLevelCompletion", 5f); // Wait 5 seconds before deciding next step
         }
     }
     void SpawnEnemy()

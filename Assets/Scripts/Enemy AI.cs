@@ -74,7 +74,7 @@ public class EnemyAI : MonoBehaviour
 
             // Handles jumping
             jumpTimer += Time.deltaTime;
-            if (jumpTimer >= jumpInterval && isGrounded)
+            if (jumpTimer >= jumpInterval && isGrounded && ShouldJumpToPlayer())
             {
                 Jump();
                 jumpTimer = 0f; // Reset jump timer
@@ -142,6 +142,21 @@ public class EnemyAI : MonoBehaviour
         Vector3 localScale = transform.localScale;
         localScale.x *= -1;
         transform.localScale = localScale;
+    }
+    bool ShouldJumpToPlayer()
+    {
+        // Check if the player is above the enemy
+        if (player.position.y > transform.position.y + 1f)
+        {
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, player.position.y - transform.position.y, groundLayer);
+            
+            if (hit.collider != null)
+            {
+                Debug.DrawRay(transform.position, Vector2.up * (player.position.y - transform.position.y), Color.green);
+                return true;
+            }
+        }
+        return false;
     }
     public void Capture()
     {
