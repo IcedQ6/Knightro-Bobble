@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,6 +16,7 @@ public class GameManager : MonoBehaviour
     private int enemiesDefeated = 0;
     private bool levelComplete = false;
     private string currentLevel;
+    [SerializeField] private TextMeshProUGUI ScoreDisplay;
 
     void Awake()
     {
@@ -47,6 +49,7 @@ public class GameManager : MonoBehaviour
             SpawnEnemy();
             spawnTimer = 0f;
         }
+        ScoreDisplay.text = "Score: " + (score.ToString());
     }
 
     void SpawnPlayer()
@@ -57,6 +60,7 @@ public class GameManager : MonoBehaviour
     public void GetScore(int Amount)
     {
         score = score + Amount;
+        
     }
 
     public void EnemyDefeated()
