@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance; // Singleton to keep GameManager persistent across scenes
+    private static Camera mainCamera;
     public GameObject user;
     public GameObject enemyPrefab;
     public Transform[] spawnPoints;
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
     private bool levelComplete = false;
     private string currentLevel;
     [SerializeField] private TextMeshProUGUI ScoreDisplay;
+    
 
     void Awake()
     {
@@ -25,6 +27,13 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject); // Keeps GameManager when switching scenes
+         
+         mainCamera = Camera.main;
+        if (mainCamera != null)
+            {
+                DontDestroyOnLoad(mainCamera.gameObject); // Keep the Camera across scenes
+            }
+             SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
         {
@@ -33,9 +42,12 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        Instantiate(user, new Vector2(0, -8), Quaternion.identity);
         currentLevel = SceneManager.GetActiveScene().name;
         Debug.Log("Current Level: " + currentLevel);
+        if (GameObject.FindWithTag("Player") == null) 
+        {
+            SpawnPlayer();
+        }
     }
 
     
@@ -51,10 +63,31 @@ public class GameManager : MonoBehaviour
         }
         ScoreDisplay.text = "Score: " + (score.ToString());
     }
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        currentLevel = scene.name;
+        levelComplete = false;
+
+        spawnPoints = FindObjectsOfType<Transform>();
+
+        // If no player exists, spawn a new one
+        if (GameObject.FindWithTag("Player") == null)
+        {
+            SpawnPlayer();
+        }
+         Debug.Log($"Loaded {currentLevel}. Spawn points: {spawnPoints.Length}");
+    }
 
     void SpawnPlayer()
     {
+        Vector2 spawnPosition = GetSpawnPosition();
+        Instantiate(user, spawnPosition, Quaternion.identity);
+    }
 
+        Vector2 GetSpawnPosition()
+    {
+        if (currentLevel == "LevelTwo") return new Vector2(5, -3); 
+        return new Vector2(0, -8); // Default spawn point
     }
 
     public void GetScore(int Amount)
