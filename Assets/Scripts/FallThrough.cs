@@ -24,7 +24,7 @@ public class FallThrough : MonoBehaviour
     //time it will take for the player to fall through the stage
     private IEnumerator EnableCollider()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         playerCollider.enabled = true;
 
     }

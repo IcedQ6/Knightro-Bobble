@@ -35,6 +35,13 @@ public class EnemyAI : MonoBehaviour
     public GameObject ducky;
     public float floatSpeed = 2f;
 
+    // Sprite
+    public Sprite captured;
+    public GameObject balloons;
+
+    // SFX
+    public AudioClip deathClip;
+
     void Start()
      {
         rb = GetComponent<Rigidbody2D>();
@@ -184,9 +191,9 @@ public class EnemyAI : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, detectionRadius);
     }
 
-    private void OnCollisionEnter2D(Collision2D playerHit)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(playerHit.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
             if (!isCaptured)
             {
@@ -195,20 +202,31 @@ public class EnemyAI : MonoBehaviour
             else
             {
                 Defeat();
+                PlayDeathClip();
             }
 
         }
 
+}
+    public void PlayDeathClip()
+    {
+        AudioSource.PlayClipAtPoint(deathClip, Camera.main.transform.position, .1f);
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Weapon")
         {
             Capture();
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = captured;
+
             Debug.Log("A projectile has hit the enemy");
 
             //GameManager.instance.EnemyDefeated();
+        }
+
+        if (collision.gameObject.tag == "Child")
+        {
+            balloons.SetActive(true);
         }
     }
 
